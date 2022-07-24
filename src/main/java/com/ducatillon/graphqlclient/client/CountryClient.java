@@ -10,10 +10,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
-@Slf4j
 public class CountryClient {
 
   private final String url;
+
+  public CountryClient() {
+     this.url = "https://countries.trevorblades.com/";
+  }
 
   public CountryClient(@Value("https://countries.trevorblades.com/") String url) {
     this.url = url;
