@@ -15,12 +15,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class GraphqlClientApplication {
 
   public static void main(String[] args) throws IOException {
-
     ConfigurableApplicationContext context = SpringApplication.run(GraphqlClientApplication.class, args);
-    CountryClient client = (CountryClient) context.getBean("countryClient");
-    ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-    CountryDto countryDto = client.getCountryDetails("BE");
-    log.info(ow.writeValueAsString(countryDto));
-
   }
 }
