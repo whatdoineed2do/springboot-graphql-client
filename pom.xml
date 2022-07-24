@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.5</version>
+    <version>2.6.9</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.ducatillon.graphql-client</groupId>
@@ -68,6 +68,7 @@
         </configuration>
       </plugin>
     </plugins>
+    <finalName>springboot-mvn</finalName>
   </build>
 
 </project>
