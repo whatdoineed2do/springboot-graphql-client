@@ -14,6 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GraphqlRequestBody {
 
+  public String toString()
+  { return query; }
+
   private String query;
   private Object variables;
 }
