@@ -1,20 +1,17 @@
 package com.ducatillon.graphqlclient;
 
-import com.ducatillon.graphqlclient.client.CountryClient;
-import com.ducatillon.graphqlclient.data.CountryDto;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import java.io.IOException;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-@Slf4j
+@Configuration
 public class GraphqlClientApplication {
 
   public static void main(String[] args) throws IOException {
     ConfigurableApplicationContext context = SpringApplication.run(GraphqlClientApplication.class, args);
+
   }
 }
