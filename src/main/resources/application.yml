@@ -1,2 +1,9 @@
 app:
-  country_url: https://countries.trevorblades.com/
+  graphql:
+    uri:
+      "https://countries.trevorblades.com/"
+
+logging:
+  level:
+    web:
+      "DEBUG"
